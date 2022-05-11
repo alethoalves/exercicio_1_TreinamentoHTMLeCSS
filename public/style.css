@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:'spotify-bold';
+    src: url('./font_spotify/CircularStd-Bold.otf') format('opentype');
+    font-weight:800;
+    font-style:normal;
+}
+@font-face {
+    font-family:'spotify-medium';
+    src: url('./font_spotify/CircularStd-Book.otf') format('opentype');
+    font-weight:600;
+    font-style:normal;
+}
+
+/************
+ESTILIZAÇÃO GERAL
+************/
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+    font-family: 'spotify-medium', Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'spotify-bold', Helvetica, sans-serif;
+    margin: 60px 0 60px 0;
+}
+h2{
+    font-size: 26px;
+    line-height: 40px;
+}
+.btn {
+    display: inline-block;
+    
+    text-transform: uppercase;
+    padding: 20px 40px;
+    margin: 50px 0 50px 0;
+    border-radius: 30px;
+    font-size: 14px;
+}
+.btn-dark{
+    background-color: #000;
+    color: #FFF;
+}
+.btn-dark:hover{
+    background-color: rgb(17, 17, 17);
+}
+.btn-green{
+    background-color: #71D862;
+    color: #1A37AB;
+    margin-bottom: 0;
+}
+.btn-green:hover{
+    background-color: #72ce64;
+}
+
+p{
+    font-size: 12px;
+}
+p a{
+    color: #FFF;
+    text-decoration:underline;
+}
+/************
+ESTILIZAÇÃO DO HEADER
+************/
+header{
+    background-color: #000;
+}
+header .container{
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: #FFF;
+}
+header nav{
+    display: flex;
+}
+header ul{
+    display: flex;
+    height: 80px;
+}
+header ul li{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li a:hover{
+    color: rgb(173, 173, 173);
+}
+header .first-menu a{
+    color: #FFF;
+}
+header .first-menu ul li:last-child a{
+    border-right: 1px solid #FFF;
+    padding-right: 20px;
+}
+header .second-menu a{
+    color: rgba(255, 255, 255, 0.7);
+}
+/************
+ESTILIZAÇÃO FIRST-ARTICLE
+************/
+.first-article{
+    background-color: #9A3C99;
+    color: #FFF;
+    padding: 60px 0 60px 0;
+}
+.first-article .container{
+    display: flex;
+}
+.first-article .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-article .right img{
+    height: 400px;
+    margin-left: 60px;
+}
+
+/************
+ESTILIZAÇÃO SECOND-ARTICLE
+************/
+.second-article{
+    background-color: #1A37AB;
+    background-image: url('../assets/bg.png');
+    background-position: right;
+    background-size:auto;
+    background-repeat: no-repeat;
+    color: #71D862;
+    padding: 60px 0 60px 0;
+}
+.second-article .container{
+    display: flex;
+}
+.second-article .left{
+    width: 600px;
+}
